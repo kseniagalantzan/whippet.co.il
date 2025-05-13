@@ -1,154 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Swift Random</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      background-color: #fff;
-      color: #333;
-      direction: rtl;
-    }
-    header {
-      text-align: center;
-      padding: 20px;
-      background-color: #f7f7f7;
-    }
-    header img {
-      max-width: 250px;
-      height: auto;
-      margin-bottom: 10px;
-    }
-    .language-switch, .contact-button {
-      display: inline-block;
-      margin: 5px;
-    }
-    .language-switch button, .contact-button {
-      background-color: #0066cc;
-      color: white;
-      border: none;
-      border-radius: 20px;
-      padding: 8px 16px;
-      margin: 5px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    .language-switch button:hover, .contact-button:hover {
-      background-color: #004a99;
-    }
-    .slider {
-      position: relative;
-      max-width: 100%;
-      height: 500px;
-      overflow: hidden;
-    }
-    .slides img {
-      width: 100%;
-      height: 500px;
-      object-fit: cover;
-      position: absolute;
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
-    }
-    .slides img.active {
-      opacity: 1;
-      position: relative;
-    }
-    .content {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: 0 auto;
-      line-height: 1.7;
-      font-size: 1.1em;
-    }
-    .content > div { display: none; }
-    .content > div.active { display: block; }
-    footer {
-      background-color: #f7f7f7;
-      text-align: center;
-      padding: 20px;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    @media (max-width: 768px) {
-      .content {
-        padding: 20px 10px;
-        font-size: 1em;
-      }
-    }
-  </style>
+  <meta name="description" content="Swift Random – וויפטים בישראל. גידול ביתי, מידע על הגזע, תערוכות, גורים וטיפים לטיפול.">
+  <meta name="description" lang="he" content="Swift Random – וויפטים בישראל. גידול ביתי, מידע על הגזע, תערוכות, גורים וטיפים לטיפול.">
+  <meta name="description" lang="en" content="Swift Random – Whippet kennel in Israel. Breed info, shows, puppies and care tips.">
+  <meta name="description" lang="ru" content="Swift Random — питомник уиппетов в Израиле. Описание породы, щенки, выставки и советы по уходу.">
+  <meta name="keywords" content="whippet, וויפט, גידול כלבים, כלבי תערוכה, כלב רוח, גורי וויפט, whippet puppies, питомник уиппетов, борзая, борзые Израиль">
 </head>
 <body>
-
-<header>
-  <img src="logo.jpg" alt="Swift Random Logo">
-  <div>
-    <button class="contact-button" onclick="scrollToContact()">צור קשר / Contact</button>
-    <div class="language-switch">
-      <button onclick="switchLang('he')">עברית</button>
-      <button onclick="switchLang('en')">English</button>
-    </div>
-  </div>
-</header>
-
-<div class="slider">
-  <div class="slides">
-    <img src="1.jpg" class="active">
-    <img src="2.jpg">
-    <img src="3.jpg">
-    <img src="4.jpg">
-    <img src="5.jpg">
-    <img src="6.jpg">
-    <img src="7.jpg">
-    <img src="8.jpg">
-    <img src="9.jpg">
-    <img src="10.jpg">
-  </div>
-</div>
-
-<div class="content">
-  <div id="lang-he" class="active">
-    <!-- Hebrew content unchanged -->
-  </div>
-
-  <div id="lang-en">
-    <!-- English content unchanged -->
-  </div>
-</div>
-
-<footer id="contact">
-  &copy; 2025 Swift Random Kennel | Designed with ❤️<br>
-  טל: <a href="tel:0508783505">050-8783505</a> |
-  מייל: <a href="mailto:swift.random@gmail.com">swift.random@gmail.com</a>
-</footer>
-
-<script>
-  const slides = document.querySelectorAll('.slides img');
-  let index = 0;
-  setInterval(() => {
-    slides.forEach(slide => slide.classList.remove('active'));
-    index = (index + 1) % slides.length;
-    slides[index].classList.add('active');
-  }, 4000);
-
-  function switchLang(lang) {
-    document.getElementById('lang-he').classList.remove('active');
-    document.getElementById('lang-en').classList.remove('active');
-    document.body.setAttribute('dir', lang === 'he' ? 'rtl' : 'ltr');
-    document.documentElement.lang = lang;
-    document.getElementById(`lang-${lang}`).classList.add('active');
-  }
-
-  function scrollToContact() {
-    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-  }
-</script>
-
+<p>Файл index.html с SEO описанием и ключевыми словами.</p>
 </body>
 </html>
