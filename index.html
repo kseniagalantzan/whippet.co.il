@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swift Random</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #fff;
+      color: #333;
+      direction: rtl;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #f7f7f7;
+    }
+    header img {
+      max-width: 300px;
+      height: auto;
+    }
+    .slider {
+      position: relative;
+      max-width: 100%;
+      height: 500px;
+      overflow: hidden;
+    }
+    .slides img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      display: none;
+    }
+    .slides img.active {
+      display: block;
+    }
+    .content {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.7;
+      font-size: 1.1em;
+    }
+    footer {
+      background-color: #f7f7f7;
+      text-align: center;
+      padding: 20px;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.jpg" alt="Swift Random Logo">
+</header>
+
+<div class="slider">
+  <div class="slides">
+    <img src="1.jpg" class="active">
+    <img src="2.jpg">
+    <img src="3.jpg">
+    <img src="4.jpg">
+  </div>
+</div>
+
+<div class="content">
+  <p>האהבה הראשונה הייתה האפגני אבל הוויפט שבה את ליבנו עם העדינות שלו והאהבה האין-סופית שהוא מחזיר...</p>
+  <p>וויפט: גזע אנגלי שנוצר לפני כ-200 שנה מערבוב של גרייהאונדים עם טריירים שונים...</p>
+  <p><strong>רוצים להצטרף למשפחת הוויפטים?</strong><br>
+  טל: <a href="tel:0508783505">050-8783505</a><br>
+  מייל: <a href="mailto:swift.random@gmail.com">swift.random@gmail.com</a></p>
+</div>
+
+<footer>
+  &copy; 2025 Swift Random Kennel | Designed with ❤️
+</footer>
+
+<script>
+  const slides = document.querySelectorAll('.slides img');
+  let index = 0;
+
+  setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+  }, 4000);
+</script>
+
+</body>
+</html>
